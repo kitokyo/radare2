@@ -225,7 +225,7 @@ typedef struct r_io_bind_t {
 
 //desc.c
 R_API int r_io_desc_init (RIO *io);
-R_API RIODesc *r_io_desc_new (RIO *io, RIOPlugin *plugin, char *uri, int flags, int mode, void *data);
+R_API RIODesc *r_io_desc_new (RIO *io, RIOPlugin *plugin, const char *uri, int flags, int mode, void *data);
 R_API void r_io_desc_free (RIODesc *desc);
 R_API int r_io_desc_add (RIO *io, RIODesc *desc);
 R_API int r_io_desc_del (RIO *io, int fd);
